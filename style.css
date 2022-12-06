@@ -38,7 +38,7 @@
       button {
         display: inline-block;
         font-family: sans-serif;
-        background-color: #5e6df1;
+        background-color: #4ed400;
         border-radius: 10px;
         border: 3px double #cccccc;
         color: #eeeeee;
@@ -50,7 +50,7 @@
       }
     
       button:hover{
-          box-shadow: 4px 3px 6px #4450bd;
+          box-shadow: 4px 3px 6px #4ed400;;
       }
     
     #startpage{
@@ -61,11 +61,11 @@
     
     #timer{
         font-family: sans-serif;
-        background-color: #5a69f0;
+        background-color: #4ed400;;
         color: #eeeeee;
         font-size: x-large;
         text-shadow: .5px .5px black;
-        text-align:right;
+        text-align:center;
         
     }
     #quiz {
@@ -103,7 +103,7 @@
         justify-content: space-around;
         border-bottom-style: outset;
         margin-bottom: .5rem;
-        background-color: #5e6df1;
+        background-color: #4ed400;;
         color: #eeeeee;
         font-family: sans-serif;
     }
