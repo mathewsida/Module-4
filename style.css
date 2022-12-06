@@ -65,7 +65,8 @@
         color: #eeeeee;
         font-size: x-large;
         text-shadow: .5px .5px black;
-        text-align: center;
+        text-align:right;
+        
     }
     #quiz {
         display: none;
