@@ -13,12 +13,6 @@ var highscoreDisplayName = document.getElementById("highscore-initials");
 var endGameBtns = document.getElementById("endGameBtns");
 var submitScoreBtn = document.getElementById("submitScore");
 var highscoreDisplayScore = document.getElementById("highscore-score");
-var finalQuestionIndex = quizQuestions.length;
-var currentQuestionIndex = 0;
-var timeLeft = 50;
-var timerInterval;
-var score = 0;
-var correct;
 var buttonA = document.getElementById("a");
 var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
@@ -62,8 +56,12 @@ var quizQuestions = [{
     
     
     ];
-
-
+    var finalQuestionIndex = quizQuestions.length;
+    var currentQuestionIndex = 0;
+    var timeLeft = 50;
+    var timerInterval;
+    var score = 0;
+    var correct;
 function generateQuizQuestion()
 {
     gameoverDiv.style.display = "none";
