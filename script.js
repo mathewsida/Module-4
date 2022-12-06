@@ -82,18 +82,17 @@ function startQuiz()
     startQuizDiv.style.display = "none";
     generateQuizQuestion();
 
-    //Timer
     timerInterval = setInterval(function() {
         timeLeft--;
         quizTimer.textContent = "Time left: " + timeLeft;
-    
+        
         if(timeLeft === 0) 
         {
           clearInterval(timerInterval);
           showScore();
         }
       }, 1000);
-    quizBody.style.display = "block";
+    quizBody.style.display = "inline-block";
 }
 function showScore()
 {
@@ -101,7 +100,7 @@ function showScore()
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
     highscoreInputName.value = "";
-    finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
+    finalScoreEl.innerHTML = "You got " + timeLeft + " out of " + quizQuestions.length + " correct!";
 }
 
 submitScoreBtn.addEventListener("click", function highscore(){
@@ -190,6 +189,7 @@ function checkAnswer(answer)
 
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
         alert("That Is Incorrect.")
+        timeLeft -= 10;
         currentQuestionIndex++;
         generateQuizQuestion();
 

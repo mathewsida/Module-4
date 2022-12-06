@@ -53,13 +53,15 @@
           box-shadow: 4px 3px 6px #4ed400;;
       }
     
-    #startpage{
+    #startpage
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-    #timer{
+    #timer
+    {
         font-family: sans-serif;
         background-color: #4ed400;;
         color: #eeeeee;
@@ -68,27 +70,32 @@
         text-align:center;
         
     }
-    #quiz {
+    #quiz 
+    {
         display: none;
     }
     
-    #result {
+    #result
+    {
         display: none;
     }
     
-    #gameover {
+    #gameover 
+    {
         text-align: center;
         display: none;
         flex-direction: column;
         align-items: center;
     }
     
-    #highScore{
+    #highScore
+    {
         height: 1.5rem;
         border: groove 2px;
     }
     
-    #high-scorePage{
+    #high-scorePage
+    {
         display: none;
         width: 50%;
         border: solid;
@@ -98,7 +105,8 @@
         background: lightsteelblue;
     }
     
-    #highscore-header{
+    #highscore-header
+    {
         display:flex;
         justify-content: space-around;
         border-bottom-style: outset;
@@ -107,7 +115,8 @@
         color: #eeeeee;
         font-family: sans-serif;
     }
-    #highscoreContainer{
+    #highscoreContainer
+    {
         height: 100%;
         width: 100%;
         display: none;
@@ -116,32 +125,37 @@
         justify-content: center;
     }
     
-    #initials{
+    #initials
+    {
         margin: .5rem;
         height: 1.75rem;
     }
     
-    #highscore-initials{
+    #highscore-initials
+    {
         display: inline-block;
         padding-left: 9.5rem;
         font-family: sans-serif;
         font-weight: bold;
     }
     
-    #highscore-score{
+    #highscore-score
+    {
         float: right;
         padding-right: 8.75rem;
         font-family: sans-serif;
         font-weight: bold;
     }
     
-    #finalScore{
+    #finalScore
+    {
         padding-bottom: 0.5rem;
         font-size: x-large;
         font-family: sans-serif;
         font-weight: bold;
     }
     
-    #endGameBtns{
+    #endGameBtns
+    {
         display: none;
     }
