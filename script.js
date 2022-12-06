@@ -100,7 +100,7 @@ function showScore()
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
     highscoreInputName.value = "";
-    finalScoreEl.innerHTML = "You got " + timeLeft + " out of " + quizQuestions.length + " correct!";
+    finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
 }
 
 submitScoreBtn.addEventListener("click", function highscore(){
@@ -138,7 +138,8 @@ function generateHighscores()
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
     var highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-    for (i=0; i<highscores.length; i++){
+    for (i=0; i<highscores.length; i++)
+    {
         var newNameSpan = document.createElement("li");
         var newScoreSpan = document.createElement("li");
         newNameSpan.textContent = highscores[i].name;
